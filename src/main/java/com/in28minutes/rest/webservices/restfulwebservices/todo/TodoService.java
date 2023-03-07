@@ -45,8 +45,10 @@ public class TodoService {
 		return todo;
 	}
 
-	public void updateTodo(Todo todo) {
+	public Todo updateTodo(Todo todo) {
 		deleteById(todo.getId());
 		todos.add(todo);
+		return todo;
 	}
+	
 }
